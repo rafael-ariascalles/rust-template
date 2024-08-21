@@ -4,3 +4,6 @@ FROM mcr.microsoft.com/devcontainers/rust:1.0.9-1-bookworm
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
    && apt-get -y install clang lld \
    && apt-get autoremove -y && apt-get clean -y
+
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+RUN rustup update

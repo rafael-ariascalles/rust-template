@@ -7,18 +7,18 @@ rust-version:
 	clippy-driver --version		#rust linter
 
 format:
-	cargo fmt --quiet
+	cargo fmt --quiet --manifest-path main/Cargo.toml
 
 lint:
-	cargo clippy --quiet
+	cargo clippy --quiet --manifest-path main/Cargo.toml
 
 test:
-	cargo test --quiet
+	cargo test --quiet --manifest-path main/Cargo.toml
 
 run:
-	cargo run
+	cargo run --manifest-path main/Cargo.toml
 
 release:
-	cargo build --release
+	cargo build --release --manifest-path main/Cargo.toml
 
 all: format lint test run
