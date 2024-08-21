@@ -40,7 +40,8 @@
 				"GitHub.copilot",
 				"vadimcn.vscode-lldb",
 				"tamasfe.even-better-toml",
-				"github.vscode-github-actions"
+				"github.vscode-github-actions",
+				"fill-labs.dependi"
 			]
 		}
 	},
