@@ -6,7 +6,7 @@ rust-version:
 	rustup --version			#rust toolchain manager
 	clippy-driver --version		#rust linter
 
-format:
+format-check:
 	cargo fmt --quiet --manifest-path main/Cargo.toml
 
 lint:
@@ -18,7 +18,7 @@ test:
 run:
 	cargo run --manifest-path main/Cargo.toml
 
-release:
+build-release:
 	cargo build --release --manifest-path main/Cargo.toml
 
 all: format lint test run
